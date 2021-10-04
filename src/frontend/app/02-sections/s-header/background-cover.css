@@ -1,0 +1,30 @@
+.background-cover{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../assets/images/background-image.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    border-radius: 0px 0px 130px 130px;
+}
+
+.background-cover__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(65, 67, 69, 0.299);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 0px 0px 127px 128px;
+}
+
+@media (min-width: 1024px){
+    .background-cover__content{
+        border-radius: 0px 0px 132px 142px;
+    }
+}

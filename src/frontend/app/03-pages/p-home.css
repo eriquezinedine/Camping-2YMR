@@ -1,0 +1,19 @@
+@import "../0-toolbox/general.css";
+@import "../01-elements/e.page.limit.css";
+
+/* Carpeta Header*/
+@import "../02-sections/s-header/background-cover.css";
+@import "../02-sections/s-header/header.css";
+@import "../02-sections/s-header/banner.css";
+
+/* Carpeta Explore*/
+@import "../02-sections/s-explorer/explore.css";
+@import "../02-sections/s-explorer/card_explore.css";
+@import "../02-sections/s-explorer/exploreAffterBefore.css";
+@import "../02-sections/s-explorer/explore_grid.css";
+
+/* Carpeta banner*/
+@import "../02-sections/s-banner/camping.css";
+
+/* Carpeta footer*/
+@import "../02-sections/s-footer/footer.css";

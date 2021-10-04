@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'roboto', helvetica, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 94px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit}
+
+ul{
+    list-style: none}
+
+i{
+    font-size: 0;
+    display: block
+}
+p{
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    /* color: $color_app_text_normal */
+}
+input, button, textarea{
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit
+}
+
+body{
+    background-color:var(--color_background);
+}

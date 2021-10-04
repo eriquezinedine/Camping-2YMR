@@ -1,0 +1,43 @@
+:root{
+    --color_primery: #E76F51;
+    --color_primeryy:#f38e74;
+    --color_background: #FAF4F2;
+    --color_background_section:#f8e1db;
+    --color3:#FFD2C6;
+    --color4:#FFB63B;
+    --color5:#FF8A6C;
+    --color_button_text:#8D8D8D;
+    --color_button_read:#f3f3f3;
+    --color7:#3B3735;
+    --color_white:#FFFFFF;
+    --color_header:#0677b3;
+   }
+
+   /* GENERAL COLORS$color_white      : #fff */
+   /* $color_black      : #000
+   $color_dark_gray  : #333
+   $color_gray_light : #CFD8DC
+   
+   $color_gray_soft  : #ECEFF1
+   // BACKGROUND POPUP
+   $color_bg_popup   : rgba($color_dark_gray,0.8)// APP COLORS
+   $color_app_green_default  : #44A4A1
+   
+   $color_app_red_default    : #FF2B3B
+   
+   $color_app_yellow_default : #FFBF65
+   
+   $color_app_text_title     : #102647
+   
+   $color_app_text_normal    : #5C6C85
+   
+   $color_app_placeholder    : #9CA8BB
+   
+   $color_app_gray_transparent: rgba($color_app_text_normal, 0.45);// SOCIAL NETWORKS
+   $color_social_networks_twitter      : #00ACED
+   
+   $color_social_networks_facebook     : #3B5998
+   
+   $color_social_networks_instagram    : #00ACED
+   
+   $color_social_networks_google_plus  : #D34836 */

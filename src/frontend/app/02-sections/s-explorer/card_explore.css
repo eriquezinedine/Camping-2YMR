@@ -1,0 +1,143 @@
+.card-explore{
+    color: var(--color7);
+    /*   CURIOSIDAD-NO UTILIZAR
+    descropcion: al parecer al momento de que las cajas se achican no se mantiende
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: var(--color_white);
+    border-radius: 20px;
+    width: 75%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.2);
+    transition: all 0.35s ease-in-out;
+    /* cursor: pointer; */
+}
+
+.card-explore:hover{
+    transform: translate(0px, -12px);
+    box-shadow: 5px 8px 20px 1px rgb(144 134 134 / 75%);
+}
+
+.card-explore__item {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.card-explore__item:nth-child(3){
+    height: 55px;
+    width: 70%;
+}
+
+.item__circle{
+    position: absolute;
+    z-index: -1;
+    top: 23px;
+    right: 33%;
+    width: 70px;
+    height: 70px;
+    background-color: var(--color_primery);
+    border-radius: 100%;
+}
+
+.explore-btn{
+    margin-top: 10px;
+    height:55px;
+    font-weight: 500;
+    background-color: var(--color_button_read);
+    color: var(--color_button_color);
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    width: 70%;
+}
+
+.explore-btn:hover{
+    background-color: var(--color7);
+    color: var(--color_white);
+}
+
+
+.explore-btnView{
+    cursor: pointer;
+    color: var(--color_primery);
+    padding: 15px 70px;
+    background-color: var(--color_background);
+    border: 2px solid var(--color_primery);
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+}
+
+.explore-btnView:hover{
+    background-color: var(--color_primery);
+    color: var(--color_white);
+}
+
+.explore-night{
+    background: var(--color_white);
+    /* width: 50%; */
+    padding: 13px 30px;
+    position: absolute;
+    bottom: -10%;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--color_primeryy);
+}
+
+.explore-white{
+    background-image: url(../../../assets/icons/corazon.png);
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    background-color: var(--color_white);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 34%;
+    transition: all 0.35s ease-in-out;
+    
+}
+
+
+.explore-white:hover{
+    background-image: url(../../../assets/icons/corazon-rojo.png);
+}
+
+
+
+.rojo-corazon{
+    background-image: url(../../../assets/icons/corazon-rojo.png);
+}
+
+.card-explore__item{
+    margin: 20px 0px;
+}
+
+.card-explore__item .explore-title{
+    margin-bottom: 10px;
+}
+
+.explore-figure{
+    margin: 0px;
+}
+
+.explore-figure img{
+    width: 90%;
+    /* height: 75%; */
+}
+
+@media (min-width: 600px){
+    .card-explore{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

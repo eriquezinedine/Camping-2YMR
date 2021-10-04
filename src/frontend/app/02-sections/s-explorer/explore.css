@@ -1,0 +1,32 @@
+.explore{
+    margin-top: -90px;
+}
+
+.explore__item{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.colum-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-destinations__figure .item__figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-destinations__figure{
+    position: relative;
+    display: inline-block;
+}
+
+.content-destinations__title{
+    color: var(--color7);
+    font-size: 40px;
+    text-align: center;
+}
+

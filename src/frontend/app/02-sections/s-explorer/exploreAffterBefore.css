@@ -1,0 +1,87 @@
+/* 
+        NO HACER ESTO SE COMPLICA LA VIDA
+
+
+.explore__item--before{
+    position: relative;
+}
+
+.explore__item--before::after, .explore__item--before::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-image: url(../../../assets/icons/Shape-left.svg);
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+.explore::after{
+    top: -400px;
+    right: -304px;
+    width: 100%;
+    height: 800px;
+    background-color: red;
+} 
+
+
+
+.explore__item--before::before{
+    bottom: 50%;
+    left: -350px;
+    width: 900px;
+    height: 1000px;
+    background-color: red;
+}
+*/
+
+
+
+
+
+  /* Hace que rompa la pantalla NO UTILIZAR */
+/* .explore__item--before::after{
+    top: -400px;
+    right: 0;
+    width: 700px;
+    height: 150vh;
+    background-position-x: 200px;
+} */
+
+/*
+.explore::before{
+
+} */
+
+.explore{
+    position: relative;
+}
+
+.explore_item--fantasma{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+    height: 80%;
+    width: 100%;
+}
+
+.fantasma:nth-child(1){
+    /* position: relative;
+    left: 966px;
+    bottom: 267px;
+    width: 709px; */
+    position: absolute;
+    right: -140px;
+    top: -265px;
+    width: 709px;
+}
+
+.fantasma:nth-child(2){
+    position: absolute;
+    left: -314px;
+    width: 648px;
+    bottom: 60px;
+    width: 709px;
+}

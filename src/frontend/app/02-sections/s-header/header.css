@@ -1,0 +1,278 @@
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 10px;
+    transition: all 0.35s ease-in-out;
+}
+
+
+header.menuPrimary{
+    background-color: var(--color_primery);
+}
+
+header.efectHeader{
+    background-color: var(--color_primery);
+}
+/*BOTON DESPLEBABLE MENU MOBILE */
+    
+    .content-line{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius:15px;
+        background-color: var(--color_white)
+    }
+    
+    .content-line__background{
+        width: 28px;
+    }
+    .content-line__background .content-item{
+        width: 28px;
+        height: 2.5px;
+        margin: 4px 0px;
+        background-color: var(--color_primery);
+    }
+
+    .max-limt .nav-movil__logo{
+        cursor: pointer;
+        margin: 0px;
+    }
+    /*Efecto rotar los 3 botoncitos del div*/
+
+        #rotate.dis-block{
+            display: block;
+        }
+
+
+        .efect-rotate{
+            position: relative;
+        }
+        
+        .efect-rotate div{
+            position: absolute;
+            top: 19px;
+            margin: 0px;
+            left: 11.5px;
+            transition: all  0.4s ease-in-out;
+        }
+        
+        .efect-rotate div:nth-child(2){
+            display: none;
+        }
+        
+        .efect-rotate div:first-child{
+            transform:rotate(45deg)
+        }
+        
+        .efect-rotate div:last-child{
+            transform:rotate(-45deg)
+        }
+
+
+
+/*******************************************/
+
+ /* BOTONES SIN UP-IN EFECTOS Y ESTILOS */
+.content-sign__item{
+    position: relative;
+}
+.content-line__item--in{
+    border: 1px solid var(--color_white);
+    border-radius: 20px;
+}
+.content-line__item--in:hover{
+    background-color: var(--color_white);
+    color: var(--color_primery);
+}
+.up{
+    position: relative;
+    width: 0%;
+    height: 3px;
+    background-color: var(--color_white);
+    transition: all 0.4s ease-in-out;
+}
+
+.desplegar .content-sign .content-sign__item .up{
+    background-color: var(--color_white) !important;
+}
+
+.content-sign__item:hover .up{
+    width: 100%;
+}
+
+
+
+/* Sector donde esta la etiqueta H1*/
+.content-sign__item{
+    color:var(--color_white);
+    font-weight: normal;
+    padding: 10px 25px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.content-title{
+    text-align: center;
+    color: var(--color_white);
+}
+
+.content-title h1 {
+    font-size:60px
+}
+
+.content-title p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.content-title__button{
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    padding: 10px 50px;
+    background-color: var(--color_primery);
+    color: var(--color_white);
+    border-radius: 50px;
+}
+.content-title__button:hover{
+    background-color: var(--color_primeryy);
+}
+.content-title__parrafo{
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+/************************************************************************************************/
+
+/* Menu para la parte mobil*/
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-movil__lista{
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top:94px;
+    background-color: var(--color_primeryy);
+    height:100vh;
+    left:-100%;
+    width: 100%;
+}
+
+.nav-movil__lista.desplegar{
+    left: 0;
+}
+
+.content-list .content-list__item{
+    cursor: pointer;
+    transition: all 0.34s ease-in-out;
+    padding: 20px 120px;
+    color: var(--color_white);
+}
+
+.content-list .content-list__item:hover{
+    background-color: var(--color_primery)
+}
+
+.content-sign{
+    padding-top: 50px;
+    display: flex;
+    justify-content:center;
+}
+
+/************************************************************************************************/
+
+
+@media (min-width: 910px){
+
+/* Menu Desktop*/
+.nav-movil__menu{
+    display: none;
+}
+
+.up{
+    background-color: var(--color_primery) ;
+}
+
+.efectHeader{
+    background-color: transparent !important;
+}
+
+.desplegar .content-sign .content-sign__item .up{
+    background-color: var(--color_primery) !important;
+}
+
+
+.nav-movil__lista{
+    position: static;
+    padding: 0px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+    background-color:  transparent;
+}
+
+.content-list .content-list__item{
+    padding: 0px;
+}
+
+.content-sign{
+    display: inline-block;
+    padding: 0px;
+}
+
+.content-list li{
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    margin: 0px 10px;
+    color: var(--color_white);
+    transition: all 0.8s ease-in-out;
+}
+
+
+.content-list li a::after{
+    content: attr(barra);
+    transition: all 0.35s ease-in-out;
+    background-color: var(--color_primery);
+    height: 3px;
+    width: 30px;
+    border-radius: 0px 50%;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 17%;
+    bottom: 50%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.content-list li.efect a::after{
+    background-color: var(--color_white);
+}
+
+.content-list li:hover  a::after{
+    opacity: 1;
+}
+
+.content-list .content-list__item:hover{
+    background-color: transparent;
+}
+
+
+}

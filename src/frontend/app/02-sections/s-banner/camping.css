@@ -1,0 +1,162 @@
+/*Fantasma camping*/
+
+.camping-fantasma{
+position: absolute;
+z-index: -1;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background-color: rebeccapurple;
+}
+
+.camping-fantasma img{
+    position: absolute;
+    z-index: 1000;
+}
+
+/*******************/
+
+.camping {
+    position: relative;
+    width: 90%;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--color_background_section);
+    padding: 30px;
+    color: var(--color7);
+    text-align: center;
+    /* imagen */
+    background-image: url(../../../assets/icons/MascaraCanmping.svg);
+    background-size: 1400px;
+    background-position-y: 100%;
+    background-position-x: -510px;
+    background-repeat: no-repeat;
+}
+
+.camping-item__elem h2{
+    margin-top: 30px;
+    font-size:5.37rem;
+}
+
+.camping-item__elem p{
+    margin-top:20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.camping-item:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.camping-item__elem:nth-child(2){
+    box-shadow: 3px 11px 16px -1px rgb(216 212 212 / 75%);
+    margin-top:20px;
+    padding: 10px 20px;
+    background-color: var(--color_white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius:20px;
+}
+
+.input-elem--figure{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--color_primery);
+    border-radius: 20px;
+    height:90%;
+    box-shadow: 4px 4px 20px 0px var(--color_primeryy);
+    transition: all 0.4s ease-in-out;
+}
+.input-elem--figure:hover{
+    background-color: var(--color_primeryy);
+    box-shadow: 4px 4px 20px 0px var(--color_primery);
+}
+
+.input-elem--figure img, .camping-item figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.camping-item figure{
+    margin: 0;
+}
+
+.camping-item__elem .input-elem{
+    width: 80%;
+    background-image: url(../../../assets/icons/mensaje.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 45%;
+    background-position-x: 10px;
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+.camping-item__elem .input-elem input{
+    width: 100%;
+}
+
+.input-elem .input-efect{
+    
+    background-color: var(--color_primery);
+    height: 3px;
+    transform: translate(0px, 5px);
+    width: 0%;
+    opacity: 0;
+    /* display: none; */
+    transition: all 0.7s ease-in-out;
+}
+
+.camping-item__elem:nth-child(2):hover .input-elem > .input-efect{
+    display: block;
+    transform: translate(0px, 0px);
+    width: 100%;
+    opacity: 1;
+}
+
+.input-elem::placeholder{
+    color: var(--color_button_text);
+}
+
+
+@media (min-width: 800px){
+    .camping{
+        text-align: initial;
+        flex-direction: row;
+        background-image: url(../../../assets/icons/MascaraCanmping.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+    .camping-item:nth-child(1){
+        padding: 58px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 10px;
+    }
+    .camping-item__elem h2{
+        font-size: 2.6rem;
+    }
+    .camping-item__elem p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px){
+    .camping-item__elem p {
+        width: 77%;
+    }
+    .camping-item:nth-child(1){
+        padding: 56px;
+    }
+}
