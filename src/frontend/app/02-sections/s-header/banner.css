@@ -25,6 +25,12 @@
     margin: 10px;
 }
 
+@media (min-height:200px ){
+    .card{
+        top: 0px;
+    }
+}
+
 @media (min-width: 667px ) and (min-height:375px ){
     .card{
         top: 0px;
