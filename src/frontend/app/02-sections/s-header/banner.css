@@ -31,7 +31,7 @@
     }
 }
 
-@media (min-width:667px) and (min-height: 721px){
+@media (min-height: 400px){
     .card{
         top: -126px;
     }
