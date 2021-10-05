@@ -30,3 +30,9 @@
         top: 0px;
     }
 }
+
+@media (min-width:667px) and (min-height: 721px){
+    .card{
+        top: -126px;
+    }
+}
